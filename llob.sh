@@ -35,13 +35,13 @@ apt-get -f install -y
 rm /root/linuxqq.deb
 
 # 下载LiteLoader 1.1.1
-curl -L -o /tmp/LiteLoaderQQNT.zip https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/1.2.2/LiteLoaderQQNT.zip
+curl -L -o /tmp/LiteLoaderQQNT.zip https://kkgithub.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/1.2.2/LiteLoaderQQNT.zip
 unzip /tmp/LiteLoaderQQNT.zip -d /LiteLoader
 echo 'require("/LiteLoader");' > /opt/QQ/resources/app/app_launcher/llqqnt.js
 sed -i 's|"main": "[^"]*"|"main": "./app_launcher/llqqnt.js"|' /opt/QQ/resources/app/package.json
 
 # 安装 whale
-curl -L -o /tmp/whale.zip https://github.com/initialencounter/whale/releases/download/v0.1.1/whale.zip
+curl -L -o /tmp/whale.zip https://kkgithub.com/initialencounter/whale/releases/download/v0.1.1/whale.zip
 mkdir -p /LiteLoader/plugins/whale
 unzip /tmp/whale.zip -d /LiteLoader/plugins/whale
 
